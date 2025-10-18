@@ -1,0 +1,350 @@
+/* Our Story Page Styles */
+
+.story-hero {
+    background: linear-gradient(to right, #FFFFFF 0%, #F5F5F5 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+    position: relative;
+}
+
+.story-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.story-hero h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    letter-spacing: -4px;
+    margin-bottom: 25px;
+    color: var(--black);
+    line-height: 0.95;
+}
+
+.story-subtitle {
+    font-size: 1.4rem;
+    color: var(--gray-medium);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Story Section */
+.story-section {
+    background-color: var(--white);
+    padding: 0;
+}
+
+.story-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Story Block */
+.story-block {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    min-height: 400px;
+    align-items: center;
+}
+
+.story-block:nth-child(odd) {
+    background-color: #FAFAFA;
+}
+
+.story-block:nth-child(even) {
+    background-color: var(--white);
+}
+
+.story-block.reverse {
+    grid-template-columns: 35% 65%;
+}
+
+.story-block.reverse .story-text {
+    order: 2;
+    padding-left: 60px;
+    padding-right: 120px;
+}
+
+.story-block.reverse .story-image {
+    order: 1;
+}
+
+.story-block:not(.reverse) .story-text {
+    padding-left: 120px;
+    padding-right: 60px;
+}
+
+.story-number {
+    display: inline-block;
+    font-size: 7rem;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.05);
+    letter-spacing: -4px;
+    margin-bottom: -30px;
+    line-height: 1;
+}
+
+.story-text h2 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    color: var(--black);
+    line-height: 1.1;
+}
+
+.story-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--gray-medium);
+    margin-bottom: 20px;
+}
+
+.story-text p:last-child {
+    margin-bottom: 0;
+}
+
+.story-text {
+    padding: 80px 0;
+}
+
+.story-image {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.story-img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.image-caption {
+    display: none;
+}
+
+/* Values Section */
+.values-section {
+    background-color: var(--black);
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.values-title {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 80px;
+    color: var(--white);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background-color: transparent;
+    padding: 40px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.value-icon {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+.value-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Story CTA */
+.story-cta {
+    text-align: center;
+    padding: 120px 60px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.story-cta h2 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+    color: var(--black);
+    line-height: 1;
+}
+
+.story-cta p {
+    font-size: 1.3rem;
+    color: var(--gray-medium);
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-story-cta {
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 22px 60px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.btn-story-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .story-block {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .story-block.reverse .story-text,
+    .story-block.reverse .story-image {
+        order: initial;
+    }
+
+    .story-block.reverse .story-text,
+    .story-block:not(.reverse) .story-text {
+        padding: 60px 40px;
+    }
+
+    .story-img {
+        min-height: 400px;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-number {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .story-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .story-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .story-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .story-text p {
+        font-size: 1rem;
+    }
+
+    .story-block.reverse .story-text,
+    .story-block:not(.reverse) .story-text {
+        padding: 50px 30px;
+    }
+
+    .story-number {
+        font-size: 4rem;
+        margin-bottom: -20px;
+    }
+
+    .values-title {
+        font-size: 2.5rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .story-cta h2 {
+        font-size: 2.5rem;
+    }
+
+    .story-cta p {
+        font-size: 1.1rem;
+    }
+
+    .story-cta {
+        padding: 80px 40px;
+    }
+
+    .story-img {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .story-hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+
+    .story-hero {
+        padding: 100px 0 60px;
+    }
+
+    .story-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .story-block.reverse .story-text,
+    .story-block:not(.reverse) .story-text {
+        padding: 40px 25px;
+    }
+
+    .story-number {
+        font-size: 3rem;
+    }
+
+    .values-section {
+        padding: 80px 30px;
+    }
+
+    .story-cta {
+        padding: 60px 25px;
+    }
+
+    .btn-story-cta {
+        padding: 18px 40px;
+        font-size: 0.9rem;
+    }
+}
+

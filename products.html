@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Pal World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">Pal World</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="products-header">
+        <div class="header-content">
+            <h1>Our Products</h1>
+            <p>Premium natural cat litter for every need</p>
+        </div>
+    </section>
+
+    <!-- Products Listing with Filters -->
+    <section class="products-listing-section">
+        <div class="products-container">
+            <!-- Filter Sidebar -->
+            <aside class="filter-sidebar">
+                <div class="filter-header">
+                    <h3>Filters</h3>
+                    <button class="reset-filters">Reset All</button>
+                </div>
+
+                <!-- Category Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">Category</h4>
+                    <div class="filter-options">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="category" value="tofu">
+                            <span>Tofu Litter</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="category" value="tapioca">
+                            <span>Tapioca Litter</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="category" value="mixed">
+                            <span>Mixed Blend</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="category" value="multicat">
+                            <span>Multi-Cat</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Features Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">Features</h4>
+                    <div class="filter-options">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="features" value="dustfree">
+                            <span>Dust-Free</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="features" value="flushable">
+                            <span>Flushable</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="features" value="biodegradable">
+                            <span>Biodegradable</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="features" value="lowtracking">
+                            <span>Low-Tracking</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="features" value="natural">
+                            <span>100% Natural</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Performance Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">Performance</h4>
+                    <div class="filter-options">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="performance" value="odor">
+                            <span>Superior Odor Control</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="performance" value="clumping">
+                            <span>Fast Clumping</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="performance" value="absorbent">
+                            <span>High Absorbency</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Eco-Friendly Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">Eco-Friendly</h4>
+                    <div class="filter-options">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="eco" value="sustainable">
+                            <span>Sustainable Sourcing</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="eco" value="recyclable">
+                            <span>Recyclable Packaging</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="eco" value="compostable">
+                            <span>Compostable</span>
+                        </label>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Products Grid -->
+            <div class="products-grid-container">
+                <div class="products-grid-header">
+                    <p class="results-count">Showing <strong>4 products</strong></p>
+                    <div class="sort-options">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort" class="sort-select">
+                            <option value="featured">Featured</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="newest">Newest</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card-listing">
+                        <a href="product-1.html" class="product-link">
+                            <div class="product-image-wrapper">
+                                <img src="img/product (1).png" alt="Premium Tofu Litter">
+                                <span class="product-badge-listing">Best Seller</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Premium Tofu Litter</h3>
+                                <p class="product-description">Ultra low-tracking, 99% dust-free, fully flushable</p>
+                                <div class="product-features-tags">
+                                    <span class="tag">Dust-Free</span>
+                                    <span class="tag">Flushable</span>
+                                    <span class="tag">Natural</span>
+                                </div>
+                                <div class="product-stats-mini">
+                                    <span class="stat-mini">99% Dust-Free</span>
+                                    <span class="stat-mini">98.8% Odor Control</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card-listing">
+                        <a href="product-2.html" class="product-link">
+                            <div class="product-image-wrapper">
+                                <img src="img/product (2).png" alt="Natural Tapioca Litter">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Natural Tapioca Litter</h3>
+                                <p class="product-description">All natural, biodegradable, ultra-absorbent</p>
+                                <div class="product-features-tags">
+                                    <span class="tag">Biodegradable</span>
+                                    <span class="tag">Natural</span>
+                                    <span class="tag">Eco-Friendly</span>
+                                </div>
+                                <div class="product-stats-mini">
+                                    <span class="stat-mini">100% Natural</span>
+                                    <span class="stat-mini">High Absorbency</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card-listing">
+                        <a href="product-3.html" class="product-link">
+                            <div class="product-image-wrapper">
+                                <img src="img/product (3).png" alt="Premium Mixed Blend">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Premium Mixed Blend</h3>
+                                <p class="product-description">Ultimate performance blend for superior results</p>
+                                <div class="product-features-tags">
+                                    <span class="tag">Fast Clumping</span>
+                                    <span class="tag">Low-Tracking</span>
+                                    <span class="tag">Natural</span>
+                                </div>
+                                <div class="product-stats-mini">
+                                    <span class="stat-mini">Superior Clumping</span>
+                                    <span class="stat-mini">99% Dust-Free</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card-listing">
+                        <a href="product-4.html" class="product-link">
+                            <div class="product-image-wrapper">
+                                <img src="img/product (4).png" alt="Multi-Cat Formula">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Multi-Cat Formula</h3>
+                                <p class="product-description">Extra strength formula for homes with multiple cats</p>
+                                <div class="product-features-tags">
+                                    <span class="tag">Extra Strength</span>
+                                    <span class="tag">Odor Control</span>
+                                    <span class="tag">Natural</span>
+                                </div>
+                                <div class="product-stats-mini">
+                                    <span class="stat-mini">Multi-Cat Rated</span>
+                                    <span class="stat-mini">99.2% Odor Control</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="footer-container-modern">
+            <div class="footer-grid-modern">
+                <div class="footer-col">
+                    <h3 class="footer-logo-text">Pal World</h3>
+                    <p class="footer-tagline">Premium natural cat litter for the eco-conscious cat parent.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Products</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="product-1.html">Premium Tofu Litter</a></li>
+                        <li><a href="product-2.html">Natural Tapioca Litter</a></li>
+                        <li><a href="product-3.html">Premium Mixed Blend</a></li>
+                        <li><a href="product-4.html">Multi-Cat Formula</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Connect</h4>
+                    <p class="footer-contact">Email: hello@palworld.com</p>
+                    <p class="footer-contact">Phone: 1-800-PAL-WORLD</p>
+                    <p class="footer-made">Made with ♥ for cats everywhere</p>
+                </div>
+            </div>
+            <div class="footer-bottom-bar">
+                <p>&copy; 2025 Pal World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
