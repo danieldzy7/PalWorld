@@ -9,8 +9,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-body">
+            <div class="empty-cart" id="empty-cart">
+                <div class="empty-cart-icon">🛒</div>
+                <p>Your cart is empty</p>
+                <a href="products.html" class="btn-continue-shopping close-cart">Continue Shopping</a>
+            </div>
+            <div class="cart-content" id="cart-content" style="display: none;">
+                <div id="cart-items"></div>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span class="cart-total-label">Total:</span>
+                <span class="cart-total-amount" id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -18,10 +46,16 @@
                 <a href="index.html">Pal World</a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html#products">Products</a></li>
+                <li><a href="products.html">Products</a></li>
                 <li><a href="index.html#features">Features</a></li>
-                <li><a href="index.html#about">About</a></li>
+                <li><a href="story.html">Our Story</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
+                <li>
+                    <a href="#" class="cart-icon">
+                        🛒
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -68,7 +102,13 @@
                 </div>
 
                 <div class="product-cta">
-                    <button class="btn-add-cart">Add to Cart</button>
+                    <button class="btn-add-cart" 
+                            data-id="product-1" 
+                            data-name="Premium Tofu Litter" 
+                            data-price="24.99" 
+                            data-image="img/product (1).png">
+                        Add to Cart
+                    </button>
                     <a href="index.html#contact" class="btn-contact">Contact Us</a>
                 </div>
             </div>
@@ -164,6 +204,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="cart.js"></script>
 </body>
 </html>
 
